@@ -23,15 +23,19 @@ async function loadUser(userName:string){
         return
     } 
 
-    const {avatar_url, login, location, followers, following} = data
+    const {avatar_url, login, name, bio, company, location, followers, following} = data
     const userData: UserProps = {
         avatar_url,
         login,
+        name,
+        bio,
+        company,
         location,
         followers,
         following
     }
     setUser(userData)
+    console.log(data)
 }
 
 

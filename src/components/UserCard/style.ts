@@ -4,6 +4,7 @@ export const UserCardStyle = styled.div`
 
     width: 100%;
     background-color: #0462C0;
+    box-shadow: 10px 10px white;
     padding: 50px;
     margin: 20px;
     border-radius: 10px;
@@ -18,6 +19,15 @@ export const UserCardStyle = styled.div`
         width: 150px;
         border-radius: 50%;
         border: 5px solid white;
+    }
+
+    h2{
+        color: #091540
+    }
+
+    .companyDiv{
+        display: flex;
+        gap: 5px;
     }
 
     .location{
