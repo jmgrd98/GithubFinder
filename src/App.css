@@ -7,3 +7,19 @@
   font-family: 'Tahoma', sans-serif
 }
 
+body{
+  background-color: #333;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  /* gap: 20px; */
+  text-align: center;
+  border: 2px solid white;
+  height: 100vh;
+}
+
+
+

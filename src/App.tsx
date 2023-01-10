@@ -7,7 +7,7 @@ function App() {
     <div className="App">
       <h1>GitHub Finder</h1>
 
-      <Outlet/>
+      <Outlet />
     </div>
 
     
