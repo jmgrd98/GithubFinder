@@ -16,7 +16,7 @@ async function loadUser(userName:string){
 
   return (
     <div>
-        <Search/>
+        <Search loadUser={loadUser}/>
     </div>
   )
 }

@@ -18,9 +18,28 @@ export const SearchStyle = styled.div`
         font-weight: bold;
     }
 
+    div{
+        display: flex;
+
+    }
+
     input{
         padding: 10px;
         border-radius: 10px;
+    }
+
+    button{
+        width: 50px;
+        padding: 5px;
+        border-radius: 10px;
+        border: white;
+        cursor: pointer;
+        margin-left: 5px;
+        background-color: white;
+    }
+
+    .searchIcon{
+        color: #0462C0;
     }
 
 `
