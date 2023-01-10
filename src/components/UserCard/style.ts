@@ -15,8 +15,9 @@ export const UserCardStyle = styled.div`
     text-align: center;
 
     img{
-        width: 200px;
-        border-radius: 20px;
+        width: 150px;
+        border-radius: 50%;
+        border: 5px solid white;
     }
 
     .location{
