@@ -9,7 +9,7 @@ function App() {
      
      <div className="logo">
       <AiFillGithub size={50}/>
-      <h1>GitHub Finder</h1>
+      <h1>GitHubFinder</h1>
       </div>
 
       <Outlet />
