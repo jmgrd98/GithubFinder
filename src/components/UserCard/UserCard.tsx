@@ -2,24 +2,35 @@ import React from 'react'
 import { UserProps } from '../../types/user'
 import {MdLocationPin} from 'react-icons/md'
 import {Link} from 'react-router-dom'
+import { UserCardStyle } from './style'
+
 
 export default function UserCard({login, avatar_url, location, followers, following}:UserProps) {
   return (
-    <div>
+    <UserCardStyle>
       <img src={avatar_url} alt={login} />
       <h2>{login}</h2>
+
+      <div className="location">
       <p><MdLocationPin/></p>
       <span>{location}</span>
+      </div>
 
-      <div>
-        <p>Seguidores</p>
+      <div className='followContainer'>
+
+      <div className="followers followCard">
+        <span>Seguidores</span>
         <p>{followers}</p>
+      </div>
 
-        <p>Seguindo</p>
+      <div className="following followCard">
+        <span>Seguindo</span>
         <p>{following}</p>
       </div>
 
-      <Link to ={`/repos/${login}`}>Ver melhores projetos</Link>
     </div>
+
+      <Link to ={`/repos/${login}`} className='RepoLink'>Ver melhores projetos</Link>
+    </UserCardStyle>
   )
 }

@@ -3,7 +3,6 @@ import styled from "styled-components";
 export const SearchStyle = styled.div`
 
     background-color: #0462C0;
-    height: 50vh;
     padding: 50px;
     margin: 20px;
     border-radius: 10px;
@@ -13,6 +12,7 @@ export const SearchStyle = styled.div`
     justify-content: flex-start;
     gap: 50px;
     text-align: center;
+    width: 100%;
 
     p{
         font-weight: bold;
