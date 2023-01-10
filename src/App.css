@@ -7,6 +7,12 @@
   font-family: 'Tahoma', sans-serif
 }
 
+:root{
+  --color-background: #091540;
+  --color-primary: #0462C0;
+  --color-secondary: #ABD2FA;
+}
+
 body{
   background-color: #091540;
   color: white;

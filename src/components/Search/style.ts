@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const SearchStyle = styled.div`
 
     background-color: #0462C0;
-    box-shadow: 10px 10px white;
+    box-shadow: 10px 10px #ABD2FA;
     padding: 50px;
     margin: 20px;
     border-radius: 10px;
@@ -11,13 +11,10 @@ export const SearchStyle = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    gap: 50px;
+    gap: 20px;
     text-align: center;
     width: 100%;
 
-    p{
-        font-weight: bold;
-    }
 
     div{
         display: flex;
@@ -27,20 +24,35 @@ export const SearchStyle = styled.div`
     input{
         padding: 10px;
         border-radius: 10px;
+        border: 2px solid #091540;
+        background-color: #ABD2FA;
     }
 
     button{
+        outline: 2px solid #ABD2FA;
         width: 50px;
         padding: 5px;
         border-radius: 10px;
         border: white;
         cursor: pointer;
-        margin-left: 5px;
-        background-color: #333;
+        margin-left: 15px;
+        background-color: var(--color-background);
+    
+        /* :hover{
+            background-color: var(--color-secondary);
+            
+        } */
+ 
+        /* :focus-within{}
+         */ 
     }
 
     .searchIcon{
-        color: white;
+        color: var(--color-secondary);
+
+        /* :hover{
+            color: var(--color-background);
+        } */
     }
 
 `

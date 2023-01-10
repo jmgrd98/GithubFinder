@@ -14,12 +14,12 @@ export default function UserCard({login, avatar_url, location, name, bio, compan
       <span>{bio}</span>
 
     <div className="companyDiv">
-      <FaBuilding/>
+      <FaBuilding className='icon'/>
       <span>{company}</span>
       </div>
 
       <div className="location">
-      <p><MdLocationPin/></p>
+      <p><MdLocationPin className='icon'/></p>
       <span>{location}</span>
       </div>
 
@@ -27,17 +27,17 @@ export default function UserCard({login, avatar_url, location, name, bio, compan
 
       <div className="followers followCard">
         <span>Seguidores</span>
-        <p>{followers}</p>
+        <p className='number'>{followers}</p>
       </div>
 
       <div className="following followCard">
         <span>Seguindo</span>
-        <p>{following}</p>
+        <p className='number'>{following}</p>
       </div>
 
     </div>
 
-      <Link to ={`/repos/${login}`} className='RepoLink'>Ver melhores projetos</Link>
+      <Link to ={`/repos/${login}`} className='RepoButton'>Ver melhores projetos</Link>
     </UserCardStyle>
   )
 }

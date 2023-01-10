@@ -4,7 +4,7 @@ export const UserCardStyle = styled.div`
 
     width: 100%;
     background-color: #0462C0;
-    box-shadow: 10px 10px white;
+    box-shadow: 10px 10px #ABD2FA;
     padding: 50px;
     margin: 20px;
     border-radius: 10px;
@@ -38,6 +38,16 @@ export const UserCardStyle = styled.div`
         font-weight: bold;
     }
 
+    .icon{
+        color: #ABD2FA;
+    }
+
+    .number{
+        color: #ABD2FA;
+        font-weight: 500;
+    }
+
+
     .followContainer{
         display: flex;
         gap: 20px;
@@ -57,10 +67,15 @@ export const UserCardStyle = styled.div`
         font-weight: bold;
     }
 
-    .RepoLink{
+    .RepoButton{
         color: white;
         font-weight: bold;
         margin-top: 20px;
+        background-color: #091540;
+        color: #ABD2FA;
+        padding: 20px;
+        border-radius: 15px;
+        box-shadow: 2px 2px #ABD2FA;
     }
 
 `
