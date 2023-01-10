@@ -35,11 +35,11 @@ export const SearchStyle = styled.div`
         border: white;
         cursor: pointer;
         margin-left: 5px;
-        background-color: white;
+        background-color: #333;
     }
 
     .searchIcon{
-        color: #0462C0;
+        color: white;
     }
 
 `

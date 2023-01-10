@@ -1,7 +1,7 @@
 import React from 'react'
 import {BsSearch} from 'react-icons/bs'
 import { SearchStyle } from './style'
-import { useState } from 'react'
+import { useState, KeyboardEvent } from 'react'
 
 type SearchProps = {
     loadUser: (userName:string) => Promise<void>
@@ -10,6 +10,12 @@ type SearchProps = {
 export default function Search({loadUser}:SearchProps) {
 
 const [userName, setUserName] = useState('')
+
+function handleKeyDown(e:KeyboardEvent){
+    if(e.key === 'Enter'){
+        loadUser(userName)
+    }
+}
 
 
   return (
@@ -21,6 +27,7 @@ const [userName, setUserName] = useState('')
     <div>
         <input
         onChange={(e) => setUserName(e.target.value)}
+        onKeyDown={handleKeyDown}
         type="text"
         placeholder='Digite o nome do usuário' />
         <button onClick={() => loadUser(userName)}>
