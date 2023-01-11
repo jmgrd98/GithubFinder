@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
-import Search from '../components/Search/Search'
-import UserCard from '../components/UserCard/UserCard'
-import { UserProps } from '../types/user'
-import Error from '../components/Error/Error'
+import Search from '../../components/Search/Search'
+import UserCard from '../../components/UserCard/UserCard'
+import { UserProps } from '../../types/user'
+import Error from '../../components/Error/Error'
 
 export default function Home() {
 
