@@ -17,10 +17,10 @@ const router = createBrowserRouter([
         path: '/',
         element: <Home/>
       },
-      {
-        path: `/repos/${login}`,
-        element: <Repos/>
-      }
+      // {
+      //   path: `/repos/${login}`,
+      //   element: <Repos/>
+      // }
     ],
   },
 ])
